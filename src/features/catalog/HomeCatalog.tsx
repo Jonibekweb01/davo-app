@@ -20,7 +20,7 @@ export const HomeCatalog: React.FC = () => {
       try {
         // Backend url manzilingiz (Port: 5000)
         const response = await axios.get(
-          "http://localhost:5000/api/v1/medicines",
+          "https://davo-backend.onrender.com/api/v1/medicines",
         );
 
         // Agar backend response strukturasi { data: { medicines: [...] } } bo'lsa:

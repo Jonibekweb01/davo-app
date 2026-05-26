@@ -107,7 +107,9 @@ export const MapView: React.FC = () => {
   useEffect(() => {
     const fetchPharmacies = async () => {
       try {
-        const response = await fetch("http://localhost:5000/api/v1/pharmacies");
+        const response = await fetch(
+          "https://davo-backend.onrender.com/api/v1/pharmacies",
+        );
         const resData = await response.json();
         console.log("Backenddan kelgan ma'lumot:", resData);
 

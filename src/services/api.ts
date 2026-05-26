@@ -2,7 +2,7 @@ import axios from "axios";
 
 // Backend ishlayotgan asosiy manzilni bog'laymiz
 const API = axios.create({
-  baseURL: "http://localhost:5000/api/v1",
+  baseURL: "https://davo-backend.onrender.com/api/v1",
   timeout: 10000, // Agar backend 10 soniya javob bermasa, so'rovni to'xtatadi
 });
 

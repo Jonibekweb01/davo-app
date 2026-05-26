@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+:root {
+  --color-bg-dark: #070913;
+  --color-panel-dark: rgba(255, 255, 255, 0.03);
+  --color-accent-neon: #00ff66;
+  --color-border-glow: rgba(255, 255, 255, 0.08);
+}
+
+body {
+  background-color: var(--color-bg-dark);
+  color: #ffffff;
+  font-family:
+    "Inter",
+    system-ui,
+    -apple-system,
+    sans-serif;
+  overflow-x: hidden;
+}
+
+/* Custom Glassmorphic Blur Effect */
+.glass-panel {
+  background: rgba(15, 18, 36, 0.4);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid var(--color-border-glow);
+}
+
+/* Neo-Brutalism Premium Neon Shadow */
+.neon-shadow {
+  box-shadow: 0px 8px 32px rgba(0, 255, 102, 0.06);
+}
+
+.neon-shadow-hover:hover {
+  box-shadow: 0px 12px 40px rgba(0, 255, 102, 0.15);
+  border-color: rgba(0, 255, 102, 0.3);
+}
+
+/* Silliq skroll */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #070913;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #00ff66;
+}
